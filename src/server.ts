@@ -1,4 +1,5 @@
 import express from "express";
+import type { Request, Response, NextFunction } from "express";
 import helmet from "helmet";
 import compression from "compression";
 import cors from "cors";
@@ -18,7 +19,7 @@ app.use(compression());
 app.use(httpLogger);
 
 // Add Request ID to response headers + log response time
-app.use((req, res, next) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
   const start = process.hrtime.bigint(); // high precision timer
   const requestId = (req as any).id;
 

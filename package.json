@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "cross-env APP_STAGE=dev ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "npm run clean && tsc",
-    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "start": "cross-env APP_STAGE=production node dist/index.js",
     "prepare": "husky",
     "lint": "eslint \"src/**/*.{ts,js}\"",
     "lint:fix": "eslint \"src/**/*.{ts,js}\" --fix",
