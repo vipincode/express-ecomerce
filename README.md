@@ -55,6 +55,10 @@ I’ll group them by category — so you know what each one does.
 npm install express mongoose cors helmet compression pino pino-http pino-pretty dotenv zod express-rate-limit
 ```
 
+```bash
+npm i ts-node-dev --save-dev
+```
+
 ### 🧑‍💻 Dev dependencies
 
 ```bash
@@ -62,6 +66,12 @@ npm install -D typescript ts-node @types/node @types/express @types/mongoose @ty
 ```
 
 ---
+
+### Required npm packages for your ESLint config
+
+```bash
+npm install --save-dev eslint @eslint/js typescript typescript-eslint eslint-plugin-prettier prettier eslint-config-prettier
+```
 
 # 🏗️ Scripts Setup (recap)
 

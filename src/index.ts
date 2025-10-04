@@ -9,15 +9,15 @@ const startServer = async () => {
   await connectDB();
 
   const server = app.listen(PORT, () => {
-    logger.info(`🚀 Server running on http://localhost:${PORT}`);
+    logger.info(`Server running on http://localhost:${PORT}`);
   });
 
   // Graceful shutdown
   const shutdown = async () => {
-    logger.info("⏳ Shutting down server...");
+    logger.info("Shutting down server...");
     await disconnectDB();
     server.close(() => {
-      logger.info("✅ Server closed gracefully");
+      logger.info("Server closed gracefully");
       process.exit(0);
     });
   };

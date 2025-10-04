@@ -9,15 +9,15 @@ import { globalRateLimiter } from "./middlewares/rateLimiter";
 
 export const app = express();
 
-// ✅ Security Middlewares
+//Security Middlewares
 app.use(helmet());
 app.use(cors({ origin: "*" }));
 app.use(compression());
 
-// ✅ Request logger
+//  Request logger
 app.use(httpLogger);
 
-// ✅ Add Request ID to response headers + log response time
+// Add Request ID to response headers + log response time
 app.use((req, res, next) => {
   const start = process.hrtime.bigint(); // high precision timer
   const requestId = (req as any).id;
@@ -44,22 +44,22 @@ app.use((req, res, next) => {
   next();
 });
 
-// ✅ Apply rate limiter (before routes)
+//  Apply rate limiter (before routes)
 app.use(globalRateLimiter);
 
-// ✅ Body parsing
+//  Body parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// ✅ Routes
+//  Routes
 app.get("/", (req, res) => {
-  res.json({ message: "API is running 🚀" });
+  res.json({ message: "API is running" });
 });
 
 app.get("/hello", (req, res) => {
   res.json({ success: true, message: "Hello world!" });
 });
 
-// ✅ Error handler (must be last)
+//  Error handler (must be last)
 app.use(errorHandler);

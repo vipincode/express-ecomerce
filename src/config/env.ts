@@ -13,7 +13,7 @@ const envSchema = z.object({
   NODE_ENV: z.enum(["development", "staging", "production"]).default("development"),
   PORT: z.string().default("4000"),
   MONGO_URI: z.string().url(),
-  DB_NAME: z.string().default("app-db"), // ✅ Added DB_NAME
+  DB_NAME: z.string().default("app-db"), // Added DB_NAME
   LOG_PRETTY: z.string().default("true"),
   RATE_LIMIT_WINDOW_MS: z.string().default("60000"),
   RATE_LIMIT_MAX: z.string().default("100"),

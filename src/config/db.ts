@@ -12,9 +12,9 @@ export const connectDB = async (): Promise<void> => {
       autoIndex: env.NODE_ENV !== "production", // disable auto-indexing in prod
     });
 
-    logger.info(`✅ MongoDB connected to database: ${env.DB_NAME}`);
+    logger.info(`MongoDB connected to database: ${env.DB_NAME}`);
   } catch (err) {
-    logger.error("❌ MongoDB connection error: " + (err as Error).message);
+    logger.error("MongoDB connection error: " + (err as Error).message);
     process.exit(1); // exit if DB fails
   }
 };
@@ -23,7 +23,7 @@ export const connectDB = async (): Promise<void> => {
 export const disconnectDB = async (): Promise<void> => {
   try {
     await mongoose.connection.close();
-    logger.info("🔌 MongoDB disconnected");
+    logger.info("MongoDB disconnected");
   } catch (err) {
     logger.error("Error during DB disconnect: " + (err as Error).message);
   }
