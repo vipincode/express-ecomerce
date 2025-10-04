@@ -77,11 +77,16 @@ npm install --save-dev eslint @eslint/js typescript typescript-eslint eslint-plu
 
 ```json
 "scripts": {
-  "clean": "rimraf dist",
-  "dev": "cross-env NODE_ENV=development ts-node src/index.ts",
-  "build": "npm run clean && tsc",
-  "start": "cross-env NODE_ENV=production node dist/index.js"
-}
+    "clean": "rimraf dist",
+    "dev": "cross-env NODE_ENV=development ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "npm run clean && tsc",
+    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "prepare": "husky",
+    "lint": "eslint \"src/**/*.{ts,js}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,js}\" --fix",
+    "format": "prettier --write \"src/**/*.{ts,js,json,md}\"",
+    "commitlint": "commitlint --from=HEAD~1 --to=HEAD --verbose"
+  },
 ```
 
 ---
