@@ -1,0 +1,36 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+.cache/
+
+# Env files (never commit secrets!)
+.env
+.env.*.local
+.env.production
+.env.staging
+.env.dev
+
+# Logs
+logs
+*.log
+*.log.*
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Coverage / tests
+coverage/
+.nyc_output/
+
+# Docker volumes (optional, usually not needed in repo)
+mongo-data/
