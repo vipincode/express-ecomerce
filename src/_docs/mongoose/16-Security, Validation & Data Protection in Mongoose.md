@@ -1,13 +1,3 @@
-Perfect 🔥 — now we’re entering one of the **most critical and real-world production topics**:
-
-# 🛡️ Chapter 15: Security, Validation & Data Protection in Mongoose
-
-> “Performance means nothing if your data isn’t safe.”
-
-This chapter will teach you how to **secure your MongoDB + Mongoose application** against real-world vulnerabilities like **NoSQL injection**, **data leaks**, and **schema abuse**, while also enforcing **safe validation and sanitization** practices.
-
----
-
 ## 🧠 15.1 Why Security Matters in Mongoose
 
 Even though MongoDB is schema-flexible, it’s not security-flexible.

@@ -1,7 +1,3 @@
-Perfect 🔥 — this next one is where we start making your **Mongoose app truly production-grade and scalable**.
-
-Welcome to:
-
 # ⚡ Chapter 10: Performance & Scalability
 
 > “Making your Mongoose + MongoDB app fast, efficient, and scalable in real-world environments.”

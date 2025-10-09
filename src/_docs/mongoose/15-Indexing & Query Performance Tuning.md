@@ -1,14 +1,3 @@
-Excellent ⚡ — now we’re stepping into one of the **most powerful optimization tools** for MongoDB and Mongoose:
-
-# 📙 Chapter 14: Indexing & Query Performance Tuning
-
-> “Indexes are to databases what turbochargers are to engines — when used correctly, they make your queries fly 🚀.”
-
-This chapter will teach you how to design, use, and inspect indexes for **high-performance queries** in Mongoose.
-We’ll also analyze **real `.explain()` plans** to see _how MongoDB executes queries under the hood_.
-
----
-
 ## 🧠 14.1 What Is an Index?
 
 An **index** is a data structure (like a sorted list) that allows MongoDB to find data **faster** without scanning every document in a collection.

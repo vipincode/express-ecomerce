@@ -1,11 +1,3 @@
-Excellent 💪 — now we move to **Point 4: Data Relationships & Population**, one of the _most powerful and misunderstood_ parts of Mongoose.
-
-In production apps, your data rarely lives in isolation — users have posts, products have reviews, orders belong to customers, etc.
-
-In this chapter, we’ll master how to **connect models**, **populate related data**, and **optimize relationships** for both speed ⚡ and clarity.
-
----
-
 # 📗 Chapter 4: Data Relationships & Population
 
 ---

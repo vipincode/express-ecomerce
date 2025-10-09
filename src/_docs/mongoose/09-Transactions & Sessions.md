@@ -1,5 +1,3 @@
-Perfect ⚡ — now we’ve arrived at one of the _most advanced and production-critical_ Mongoose topics:
-
 # 📙 Chapter 9: Transactions & Sessions
 
 > “Ensuring **atomicity** and **data consistency** across multiple collections.”

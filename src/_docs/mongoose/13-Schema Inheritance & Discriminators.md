@@ -1,9 +1,3 @@
-Awesome ⚡ — now we’re moving into a very interesting and advanced MongoDB + Mongoose topic — **Schema Inheritance & Discriminators**.
-
-This feature allows you to create **different models that share a common base schema**, perfect for handling **multiple user roles, polymorphic documents, or type variations** — all within a single collection.
-
----
-
 # 📗 Chapter 12: Schema Inheritance & Discriminators
 
 ---

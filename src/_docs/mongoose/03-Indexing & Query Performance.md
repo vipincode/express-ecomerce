@@ -1,10 +1,3 @@
-Perfect 🚀 — Now we move to **Point 3: Indexing & Query Performance** — one of the most **powerful and production-critical** topics in Mongoose.
-
-Indexes make your database blazing fast ⚡ when used right — but can also **slow writes** or **bloat memory** if used wrong.
-Let’s deeply understand **how they work**, **how to create them in Mongoose**, and **how to analyze performance**.
-
----
-
 # 📙 Chapter 3: Indexing & Query Performance
 
 ---

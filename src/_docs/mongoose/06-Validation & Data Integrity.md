@@ -1,10 +1,3 @@
-Perfect 🔥 — now we’re entering **Point 6: Validation & Data Integrity**, one of the _most critical topics_ in building a **production-ready Mongoose application**.
-
-Validation is your **first line of defense** against bad data — ensuring your database stays clean, consistent, and predictable.
-In this chapter, we’ll master how to **validate data using Mongoose**, create **custom & async validators**, and integrate external libraries like **Zod or Joi** for stronger type validation.
-
----
-
 # 📙 Chapter 6: Validation & Data Integrity
 
 ---
