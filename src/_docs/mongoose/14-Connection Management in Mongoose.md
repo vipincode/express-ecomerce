@@ -1,13 +1,3 @@
-Perfect ⚡ — now we’re entering a **mission-critical topic for production apps**:
-
-# 📘 Chapter 13: Connection Management in Mongoose
-
-> “A stable MongoDB connection strategy separates a development app from a _production-grade system_.”
-
-In this chapter, you’ll learn how to handle **connection pooling**, **graceful shutdowns**, **multiple database connections**, and **reconnect strategies** — all crucial for ensuring your app never goes down or leaks memory.
-
----
-
 ## 🧩 13.1 Why Connection Management Matters
 
 By default, Mongoose opens a single connection to MongoDB and **keeps it open** for reuse.

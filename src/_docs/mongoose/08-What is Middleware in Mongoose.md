@@ -1,5 +1,3 @@
-Perfect 💪 — now we move into one of the **most powerful and production-critical** features in Mongoose:
-
 # 📗 Chapter 8: Middleware (Hooks)
 
 ---

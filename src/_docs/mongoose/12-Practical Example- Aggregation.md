@@ -1,9 +1,3 @@
-Perfect ✅ — that’s **exactly** the best way to learn **MongoDB Aggregation** — by connecting it to a **real Mongoose schema** and walking through **how data flows through each aggregation stage**.
-
-Let’s build this from scratch 👇
-
----
-
 # ⚙️ Practical Example: Aggregation in Action with Real Mongoose Schema
 
 ---

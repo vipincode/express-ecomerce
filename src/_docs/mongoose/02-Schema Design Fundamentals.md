@@ -1,9 +1,3 @@
-Excellent 🔥 — Let’s dive into **Point 2: Schema Design Fundamentals**, one of the most important topics in mastering Mongoose for a **production-ready** application.
-
-Here, we’ll learn not just how to define schemas — but how to **design** them properly, use **TypeScript types**, **schema options**, and understand **how MongoDB and Mongoose work together** under the hood.
-
----
-
 # 📗 Chapter 2: Schema Design Fundamentals
 
 ---

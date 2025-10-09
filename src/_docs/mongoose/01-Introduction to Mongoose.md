@@ -1,8 +1,3 @@
-Perfect ✅ — we’ll start with **Point 1: Introduction to Mongoose** — this is the foundation for everything else.
-I’ll cover **concepts + setup + connection + TypeScript best practices** to make it **production-grade** from the beginning.
-
----
-
 # 🧠 Chapter 1: Introduction to Mongoose
 
 ---
