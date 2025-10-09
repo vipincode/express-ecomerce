@@ -1,10 +1,3 @@
-Perfect 💥 — now we’re moving into the **practical design stage** where relationships really matter.
-Let’s break this scenario down **conceptually first**, then show the **Mongoose schema design** with clear reasoning 👇
-
----
-
-## 🧠 Scenario Recap
-
 We have three entities:
 
 1. 🛍️ **Product**

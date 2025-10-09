@@ -1,10 +1,3 @@
-Excellent 👏 — this is one of the **most powerful questions** you can ask before starting any backend project.
-Most developers jump straight to coding, but **schema design** is where you define your entire system’s **data architecture**, **relationships**, and **scalability**.
-
-Let’s build a **mental checklist 🧭** so you know _exactly what to think about_ before writing a single schema line.
-
----
-
 # 🧠 1. Start With the Business Model — Not the Database
 
 Before writing any code, **think about entities** and **how they interact**.

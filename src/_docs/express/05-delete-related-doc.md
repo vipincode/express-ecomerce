@@ -1,5 +1,3 @@
-Perfect 👏 — this is a **real-world question** every backend developer must solve:
-
 > ❓ “If I delete a user, how do I also delete all documents related to that user (like profile, addresses, orders, etc.)?”
 
 MongoDB **does not have automatic cascading deletes** like SQL (foreign keys + `ON DELETE CASCADE`).

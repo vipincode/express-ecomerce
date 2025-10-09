@@ -1,11 +1,3 @@
-Perfect ⚡ — now we move into one of the **most powerful MongoDB + Mongoose capabilities** — the **Aggregation Framework**.
-
-If you want to build dashboards, analytics, reporting tools, or perform complex queries efficiently — **aggregation pipelines** are the key.
-
-Let’s master them step-by-step 👇
-
----
-
 # 📘 Chapter 11: Advanced Aggregation in Mongoose
 
 ---

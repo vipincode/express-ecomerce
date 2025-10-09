@@ -1,11 +1,3 @@
-Awesome 🚀 — we’ve now reached **Point 7: Querying Data in Mongoose**,
-where things get _really_ practical and powerful.
-
-In production systems, efficient querying determines **performance**, **user experience**, and **database health**.
-We’ll cover how to use Mongoose’s query helpers, operators, projections, pagination, and performance tricks.
-
----
-
 # 📘 Chapter 7: Querying Data in Mongoose
 
 ---

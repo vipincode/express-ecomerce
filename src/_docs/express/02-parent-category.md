@@ -1,8 +1,3 @@
-Great question 👏 — you’re looking at a **self-referencing relationship** in MongoDB using Mongoose.
-Let’s break down exactly what this means step by step 👇
-
----
-
 ## 🧠 The Field
 
 ```ts

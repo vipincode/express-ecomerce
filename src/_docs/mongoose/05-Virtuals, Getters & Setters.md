@@ -1,9 +1,3 @@
-Excellent ⚡ — let’s move to **Point 5: Virtuals, Getters & Setters**, one of the most _elegant and powerful_ parts of Mongoose that help you **transform**, **compute**, and **control how your data looks** — without changing what’s stored in MongoDB.
-
-This feature is especially important for **clean APIs**, **data presentation**, and **security** (e.g., hiding private fields like passwords).
-
----
-
 # 📘 Chapter 5: Virtuals, Getters & Setters
 
 ---
