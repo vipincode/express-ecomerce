@@ -3,7 +3,7 @@ import type { Request, Response, NextFunction } from "express";
 import helmet from "helmet";
 import compression from "compression";
 import cors from "cors";
-
+import cookieParser from "cookie-parser";
 import { httpLogger } from "./config/logger";
 import { errorHandler } from "./middlewares/errorHandler";
 import { globalRateLimiter } from "./middlewares/rateLimiter";
@@ -14,6 +14,8 @@ export const app = express();
 app.use(helmet());
 app.use(cors({ origin: "*" }));
 app.use(compression());
+app.use(express.json());
+app.use(cookieParser());
 
 //  Request logger
 app.use(httpLogger);
