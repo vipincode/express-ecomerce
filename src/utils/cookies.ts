@@ -2,18 +2,11 @@ import env from "../config/env";
 import type { Response } from "express";
 import { randomBytes } from "crypto";
 
-export const setRefreshTokenCookie = (res: Response, token: string) => {
-  const isProduction = env.NODE_ENV === "production";
-  res.cookie("refreshToken", token, {
-    httpOnly: true,
-    secure: isProduction,
-    sameSite: "lax",
-    maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
-    path: "/",
-  });
-};
-
-// Set cookie function
+/**
+ *
+ * @param res Set cookie function
+ * @param token
+ */
 export const setTokenCookie = (res: Response, token: string) => {
   const isProduction = env.NODE_ENV === "production";
 
@@ -22,6 +15,22 @@ export const setTokenCookie = (res: Response, token: string) => {
     secure: isProduction,
     sameSite: "lax",
     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+    path: "/",
+  });
+};
+
+/**
+ *
+ * @param refresh cookie function
+ * @param token
+ */
+export const setRefreshTokenCookie = (res: Response, token: string) => {
+  const isProduction = env.NODE_ENV === "production";
+  res.cookie("refreshToken", token, {
+    httpOnly: true,
+    secure: isProduction,
+    sameSite: "lax",
+    maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
     path: "/",
   });
 };

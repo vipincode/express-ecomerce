@@ -8,14 +8,15 @@ import { httpLogger } from "./config/logger";
 import { errorHandler } from "./middlewares/errorHandler";
 import { globalRateLimiter } from "./middlewares/rateLimiter";
 
+// API ROUTER
+import authRoutes from "./routes/authRoutes";
+
 export const app = express();
 
 //Security Middlewares
 app.use(helmet());
 app.use(cors({ origin: "*" }));
 app.use(compression());
-app.use(express.json());
-app.use(cookieParser());
 
 //  Request logger
 app.use(httpLogger);
@@ -52,6 +53,7 @@ app.use(globalRateLimiter);
 
 //  Body parsing
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
@@ -63,6 +65,9 @@ app.get("/", (req, res) => {
 app.get("/hello", (req, res) => {
   res.json({ success: true, message: "Hello world!" });
 });
+
+// API Routes
+app.use("/api/auth", authRoutes);
 
 //  Error handler (must be last)
 app.use(errorHandler);
