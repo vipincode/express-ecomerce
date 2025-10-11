@@ -1,0 +1,10 @@
+| Status | Meaning               | Use for                        |
+| ------ | --------------------- | ------------------------------ |
+| 200    | OK                    | Successful GET, PUT            |
+| 201    | Created               | Successful POST                |
+| 400    | Bad Request           | Validation or user input error |
+| 401    | Unauthorized          | Missing or invalid token       |
+| 403    | Forbidden             | Permission or CSRF failure     |
+| 404    | Not Found             | Resource doesn’t exist         |
+| 409    | Conflict              | Duplicate record               |
+| 500    | Internal Server Error | Unexpected failures            |
