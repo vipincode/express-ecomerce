@@ -10,12 +10,19 @@ import { globalRateLimiter } from "./middlewares/rateLimiter";
 
 // API ROUTER
 import authRoutes from "./routes/authRoutes";
+import categoryRoutes from "./routes/categoryRoutes";
 
 export const app = express();
 
 //Security Middlewares
 app.use(helmet());
-app.use(cors({ origin: "*" }));
+// app.use(cors({ origin: "*" }));
+app.use(
+  cors({
+    origin: "http://localhost:3000", // 👈 your frontend URL
+    credentials: true, // 👈 allow sending cookies
+  }),
+);
 app.use(compression());
 
 //  Request logger
@@ -41,7 +48,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
         statusCode: res.statusCode,
         duration: `${durationMs.toFixed(2)}ms`,
       },
-      "request completed"
+      "request completed",
     );
   });
 
@@ -68,6 +75,7 @@ app.get("/hello", (req, res) => {
 
 // API Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/category", categoryRoutes);
 
 //  Error handler (must be last)
 app.use(errorHandler);
