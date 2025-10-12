@@ -8,12 +8,8 @@ import {
 } from "../controllers/categoryControllers";
 import { authenticateUser } from "../middlewares/auth";
 import { validateBody, validateParams, validateQuery } from "../middlewares/validation";
-import {
-  categorySchema,
-  idParamSchema,
-  paginationSchema,
-  slugParamSchema,
-} from "../schemas/categorySchema";
+import { categorySchema } from "../schemas/categorySchema";
+import { idParamSchema, paginationSchema, slugParamSchema } from "../schemas/querySchema";
 
 const router = Router();
 

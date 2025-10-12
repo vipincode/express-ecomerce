@@ -31,6 +31,15 @@ const productSchema = new Schema<IProduct>(
   { timestamps: true }
 );
 
+// ✅ Compound indexes for performance
+productSchema.index({ name: 1, category: 1 }); // speeds up searches by name + category
+productSchema.index({ price: 1 }); // for price-based sorting/filtering
+productSchema.index({ createdAt: -1 }); // for recent products
+productSchema.index({ ratingsAverage: -1 }); // for top-rated products
+
+// ✅ Text index for search
+productSchema.index({ name: "text", description: "text" });
+
 // Virtual populate reviews
 productSchema.virtual("reviews", {
   ref: "Review",
